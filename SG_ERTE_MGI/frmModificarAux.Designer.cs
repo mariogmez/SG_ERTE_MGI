@@ -45,6 +45,7 @@ namespace SG_ERTE_MGI
             // 
             this.txtCif.Location = new System.Drawing.Point(123, 66);
             this.txtCif.Name = "txtCif";
+            this.txtCif.ReadOnly = true;
             this.txtCif.Size = new System.Drawing.Size(154, 20);
             this.txtCif.TabIndex = 0;
             // 
