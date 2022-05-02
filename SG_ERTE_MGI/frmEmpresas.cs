@@ -12,6 +12,41 @@ namespace SG_ERTE_MGI
 {
     public partial class frmEmpresas : Form
     {
+        /*
+         * FUNCIONES
+         */
+
+        private void mostrarEmpresas()
+        {
+            using (bd_ertesEntities objBD = new bd_ertesEntities())
+            {
+                var consultaEmpresas = from soc in objBD.EMPRESAS
+                                       orderby soc.Nombre
+                                       select new { soc.Nombre, soc.Sector, soc.Cif };
+
+                var lista = consultaEmpresas.ToList();
+                dgvEmpresas.DataSource = lista;
+            }
+        }
+
+        private void accionModificar()
+        {
+
+            if (dgvEmpresas.SelectedRows.Count > 0)
+            {
+                frmModificarAux form = new frmModificarAux(dgvEmpresas.SelectedRows[0].Cells[2].Value.ToString());
+                form.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("No hay ninguna fila seleccionada");
+            }
+
+        }
+
+        /*
+         * FUNCIONES DEL FORM
+         */
         public frmEmpresas()
         {
             InitializeComponent();
@@ -24,42 +59,19 @@ namespace SG_ERTE_MGI
             mostrarEmpresas();
         }
 
-        private void mostrarEmpresas()
-        {
-            using (bd_ertesEntities objBD = new bd_ertesEntities())
-            {
-                var consultaEmpresas = from soc in objBD.EMPRESAS
-                                       orderby soc.Nombre
-                                     select new { soc.Nombre, soc.Sector, soc.Cif };
+        
 
-                var lista = consultaEmpresas.ToList();
-                dgvEmpresas.DataSource = lista;
-            }
-        }
-
-        private void dgvEmpresas_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dgvEmpresas.SelectedRows.Count > 0)
-            {
-                MessageBox.Show(dgvEmpresas.SelectedRows[0].Cells[2].Value.ToString());
-
-            }
-        }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            if (dgvEmpresas.SelectedRows.Count > 0)
-            {
+            accionModificar();
+        }
 
-                frmModificarAux form = new frmModificarAux(dgvEmpresas.SelectedRows[0].Cells[2].Value.ToString());
-                form.ShowDialog();
+        
 
-
-            }
-            else
-            {
-                MessageBox.Show("No hay ninguna fila seleccionada");
-            }
+        private void dgvEmpresas_DoubleClick(object sender, EventArgs e)
+        {
+            accionModificar();
         }
     }
 }

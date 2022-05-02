@@ -51,7 +51,7 @@ namespace SG_ERTE_MGI
             this.dgvEmpresas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEmpresas.Size = new System.Drawing.Size(776, 350);
             this.dgvEmpresas.TabIndex = 0;
-            this.dgvEmpresas.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpresas_CellContentDoubleClick);
+            this.dgvEmpresas.DoubleClick += new System.EventHandler(this.dgvEmpresas_DoubleClick);
             // 
             // btnAniadir
             // 
