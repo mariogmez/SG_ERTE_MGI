@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG_ERTE_MGI", "SG_ERTE_MGI\SG_ERTE_MGI.csproj", "{9178B883-74AB-452C-A6C0-3D6B9B322D8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9178B883-74AB-452C-A6C0-3D6B9B322D8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9178B883-74AB-452C-A6C0-3D6B9B322D8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9178B883-74AB-452C-A6C0-3D6B9B322D8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9178B883-74AB-452C-A6C0-3D6B9B322D8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D0FCED9-8B59-4A43-8D1D-84918E9CA1AE}
+	EndGlobalSection
+EndGlobal
