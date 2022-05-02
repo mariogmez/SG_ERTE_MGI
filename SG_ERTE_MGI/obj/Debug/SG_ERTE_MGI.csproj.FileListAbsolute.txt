@@ -1,0 +1,16 @@
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\bin\Debug\SG_ERTE_MGI.exe.config
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\bin\Debug\SG_ERTE_MGI.exe
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\bin\Debug\SG_ERTE_MGI.pdb
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\obj\Debug\SG_ERTE_MGI.csproj.AssemblyReference.cache
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\obj\Debug\SG_ERTE_MGI.frmPrincipal.resources
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\obj\Debug\SG_ERTE_MGI.Properties.Resources.resources
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\obj\Debug\SG_ERTE_MGI.csproj.GenerateResource.cache
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\obj\Debug\SG_ERTE_MGI.csproj.CoreCompileInputs.cache
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\obj\Debug\SG_ERTE_MGI.exe
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\obj\Debug\SG_ERTE_MGI.pdb
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\bin\Debug\EntityFramework.dll
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\bin\Debug\EntityFramework.xml
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\obj\Debug\SG_ERTE_MGI.frmEmpresas.resources
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\obj\Debug\SG_ERTE_MGI.csproj.CopyComplete
