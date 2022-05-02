@@ -20,12 +20,15 @@ namespace SG_ERTE_MGI
         {
             using (bd_ertesEntities objBD = new bd_ertesEntities())
             {
-                var consultaEmpresas = from soc in objBD.EMPRESAS
-                                       orderby soc.Nombre
-                                       select new { soc.Nombre, soc.Sector, soc.Cif };
+                var consultaEmpresas = from emp in objBD.EMPRESAS
+                                       from sec in objBD.SECTORES
+                                       where emp.Sector == sec.Id_sector
+                                       orderby emp.Nombre
+                                       select new { emp.Nombre, sec.Descripcion, emp.Cif, emp.Domicilio };
 
                 var lista = consultaEmpresas.ToList();
                 dgvEmpresas.DataSource = lista;
+                dgvEmpresas.Columns[3].Visible = false;
             }
         }
 
@@ -34,7 +37,11 @@ namespace SG_ERTE_MGI
 
             if (dgvEmpresas.SelectedRows.Count > 0)
             {
-                frmModificarAux form = new frmModificarAux(dgvEmpresas.SelectedRows[0].Cells[2].Value.ToString());
+                string nombreEmp = dgvEmpresas.SelectedRows[0].Cells[0].Value.ToString();
+                string nombreSec = dgvEmpresas.SelectedRows[0].Cells[1].Value.ToString();
+                string cif = dgvEmpresas.SelectedRows[0].Cells[2].Value.ToString();
+                string domicilio = dgvEmpresas.SelectedRows[0].Cells[3].Value.ToString();
+                frmModificarAux form = new frmModificarAux(nombreEmp, nombreSec, cif, domicilio);
                 form.ShowDialog();
             }
             else

@@ -15,39 +15,40 @@ namespace SG_ERTE_MGI
         /*
          * FUNCIONES
          */
-        private void cargarDatos()
-        {
-            using (bd_ertesEntities objBD = new bd_ertesEntities())
-            {
-                var consultaEmpresas = from soc in objBD.EMPRESAS
-                                       orderby soc.Nombre
-                                       select new { soc.Nombre, soc.Domicilio, soc.Sector };
-
-                var lista = consultaEmpresas.ToList();
-
-                txtNombre.Text = lista[0].Nombre;
-                txtDomicilio.Text = lista[0].Domicilio;
-            }
-
-
-        }
 
         private void cargarCbx()
         {
+            using (bd_ertesEntities objBD = new bd_ertesEntities())
+            {
+                var consultaSectores = from sec in objBD.SECTORES
+                                       orderby sec.Descripcion
+                                       select new { sec.Id_sector, sec.Descripcion };
 
+                var lista = consultaSectores.ToList();
+
+                for (int i = 0; i < lista.Count; i++)
+                {
+                    cbxSector.Items.Add(lista[i].Descripcion);
+                }
+            }
         }
         /*
          * FUNCIONES DEL FORM
          */
-        public frmModificarAux(string cif)
+        public frmModificarAux(string nombreEmp, string nombreSec, string cif, string domicilio)
         {
             InitializeComponent();
+            txtNombre.Text = nombreEmp;
+            cbxSector.Text = nombreSec;
+            txtDomicilio.Text = domicilio;
             txtCif.Text = cif;
         }
 
         private void frmModificarAux_Load(object sender, EventArgs e)
         {
-            cargarDatos();
+            cargarCbx();
+
+        
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)

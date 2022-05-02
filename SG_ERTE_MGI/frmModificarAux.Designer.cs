@@ -36,9 +36,9 @@ namespace SG_ERTE_MGI
             this.label4 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDomicilio = new System.Windows.Forms.TextBox();
-            this.txtSector = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.cbxSector = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtCif
@@ -98,13 +98,6 @@ namespace SG_ERTE_MGI
             this.txtDomicilio.Size = new System.Drawing.Size(154, 20);
             this.txtDomicilio.TabIndex = 6;
             // 
-            // txtSector
-            // 
-            this.txtSector.Location = new System.Drawing.Point(123, 221);
-            this.txtSector.Name = "txtSector";
-            this.txtSector.Size = new System.Drawing.Size(154, 20);
-            this.txtSector.TabIndex = 7;
-            // 
             // btnAceptar
             // 
             this.btnAceptar.Location = new System.Drawing.Point(56, 276);
@@ -125,14 +118,22 @@ namespace SG_ERTE_MGI
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
+            // cbxSector
+            // 
+            this.cbxSector.FormattingEnabled = true;
+            this.cbxSector.Location = new System.Drawing.Point(123, 216);
+            this.cbxSector.Name = "cbxSector";
+            this.cbxSector.Size = new System.Drawing.Size(154, 21);
+            this.cbxSector.TabIndex = 10;
+            // 
             // frmModificarAux
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(316, 354);
+            this.Controls.Add(this.cbxSector);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.txtSector);
             this.Controls.Add(this.txtDomicilio);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label4);
@@ -158,8 +159,8 @@ namespace SG_ERTE_MGI
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDomicilio;
-        private System.Windows.Forms.TextBox txtSector;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.ComboBox cbxSector;
     }
 }
