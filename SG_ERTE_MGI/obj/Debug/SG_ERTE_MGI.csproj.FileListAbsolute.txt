@@ -14,3 +14,4 @@ C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\bin\
 C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\obj\Debug\SG_ERTE_MGI.frmEmpresas.resources
 C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\obj\Debug\SG_ERTE_MGI.csproj.CopyComplete
+C:\Users\mario\Documents\MEGA\Interfaces\WFormMarzo\SG_ERTE_MGI\SG_ERTE_MGI\obj\Debug\SG_ERTE_MGI.frmModificarAux.resources

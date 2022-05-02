@@ -29,35 +29,29 @@ namespace SG_ERTE_MGI
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvEmpresas = new System.Windows.Forms.DataGridView();
             this.btnAniadir = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.clnEmpresa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnSector = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnCif = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpresas)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvEmpresas
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clnEmpresa,
-            this.clnSector,
-            this.clnCif});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 350);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvEmpresas.AllowUserToAddRows = false;
+            this.dgvEmpresas.AllowUserToDeleteRows = false;
+            this.dgvEmpresas.AllowUserToResizeColumns = false;
+            this.dgvEmpresas.AllowUserToResizeRows = false;
+            this.dgvEmpresas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEmpresas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmpresas.Location = new System.Drawing.Point(12, 12);
+            this.dgvEmpresas.MultiSelect = false;
+            this.dgvEmpresas.Name = "dgvEmpresas";
+            this.dgvEmpresas.ReadOnly = true;
+            this.dgvEmpresas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEmpresas.Size = new System.Drawing.Size(776, 350);
+            this.dgvEmpresas.TabIndex = 0;
+            this.dgvEmpresas.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpresas_CellContentDoubleClick);
             // 
             // btnAniadir
             // 
@@ -76,6 +70,7 @@ namespace SG_ERTE_MGI
             this.btnModificar.TabIndex = 2;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -86,24 +81,6 @@ namespace SG_ERTE_MGI
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = true;
             // 
-            // clnEmpresa
-            // 
-            this.clnEmpresa.HeaderText = "Nombre Empresa";
-            this.clnEmpresa.Name = "clnEmpresa";
-            this.clnEmpresa.ReadOnly = true;
-            // 
-            // clnSector
-            // 
-            this.clnSector.HeaderText = "Nombre Sector";
-            this.clnSector.Name = "clnSector";
-            this.clnSector.ReadOnly = true;
-            // 
-            // clnCif
-            // 
-            this.clnCif.HeaderText = "CIF";
-            this.clnCif.Name = "clnCif";
-            this.clnCif.ReadOnly = true;
-            // 
             // frmEmpresas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -112,23 +89,21 @@ namespace SG_ERTE_MGI
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAniadir);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvEmpresas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEmpresas";
             this.Text = "frmEmpresas";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frmEmpresas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpresas)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvEmpresas;
         private System.Windows.Forms.Button btnAniadir;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnEmpresa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnSector;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnCif;
     }
 }
